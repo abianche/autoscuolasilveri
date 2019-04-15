@@ -1,0 +1,17 @@
+enable: true
+contactFormTitle: CONTATTI
+contactFormSubtitle: >
+    Inviaci un messaggio compilando il form qui sotto.
+mapTitle: VIENI A TROVARCI
+mapSubtitle: >
+    Vieni in una delle nostre sedi, trova qui sotto le indicazioni.
+officeAddress1: Viale Trento 95 - 63087 Comunanza (AP)
+officeAddress2: Viale Della Repubblica 9 - 63093 Roccafluvione (AP)
+mail1: ag.silveri@tiscali.it
+# mail2:
+phone1: 0736 845317
+phone2: 0736 365889
+openingTitle: ORARI DI APERTURA
+openingHours1: "Lunedì - Venerdì: 9.00 - 12.30 | 16.00 - 19.20"
+openingHours2: "Sabato: 9.00 - 12.30"
+emailTitle: SCRIVICI UN EMAIL

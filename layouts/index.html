@@ -1,0 +1,21 @@
+{{ if .Site.Params.maintenance.enable }}
+
+{{ partial "maintenance.html" . }}
+
+{{ else }}
+
+{{ partial "header.html" . }}
+
+{{ partial "banner.html" . }}
+
+{{ partial "about.html" . }}
+
+{{ partial "services.html" . }}
+
+{{ partial "associates.html" . }}
+
+{{ partial "cta.html" . }}
+
+{{ partial "footer.html" . }}
+
+{{ end }}

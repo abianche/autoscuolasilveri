@@ -1,0 +1,56 @@
+{{ if .Site.Params.team.enable }}
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInDown" data-wow-duration="250ms">
+                {{ with .Site.Data.team.title }}
+                <h2 class="subtitle text-center">{{ . }}</h2>
+                {{ end }}
+            </div>
+            <div class="col text-center">
+                <div class="team-member wow fadeInLeft" data-wow-duration="250ms">
+                    <h3 class="team_name">{{ .Site.Data.team.name1 }}</h3>
+                    <p class="team_designation">{{ .Site.Data.team.designation1 }}</p>
+                    <p class="team_text" style="text-align: left">{{ .Site.Data.team.description1 }}</p>
+                    <p class="social-icons">
+                            {{ with .Site.Data.team.facebook1 }} <a href="{{ . }}" class="facebook" target="_blank"> <i class="ion-social-facebook-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.twitter1 }} <a href="{{ . }}" target="_blank"> <i class="ion-social-twitter-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.linkedIn1 }} <a href="{{ . }}" target="_blank"> <i class="ion-social-linkedin-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.googleplus1 }} <a href="{{ . }}" target="_blank"> <i class="ion-social-googleplus-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.whatsapp1 }} <a href="{{ . }}" class="whatsapp" target="_blank"> <i class="ion-social-whatsapp-outline"></i> </a>
+                            {{ end }}
+                    </p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="team-member wow fadeInUp" data-wow-duration="250ms">
+                    <div class="team-img"><img src="{{ .Site.Data.team.image | absURL }}" class="team-pic" alt="team-member" /></div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="team-member wow fadeInRight" data-wow-duration="250ms">
+                    <h3 class="team_name">{{ .Site.Data.team.name2 }}</h3>
+                    <p class="team_designation">{{ .Site.Data.team.designation2 }}</p>
+                    <p class="team_text" style="text-align: right">{{ .Site.Data.team.description2 }}</p>
+                    <p class="social-icons">
+                            {{ with .Site.Data.team.facebook2 }} <a href="{{ . }}" class="facebook" target="_blank"> <i class="ion-social-facebook-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.twitter2 }} <a href="{{ . }}" target="_blank"> <i class="ion-social-twitter-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.linkedIn2 }} <a href="{{ . }}" target="_blank"> <i class="ion-social-linkedin-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.googleplus2 }} <a href="{{ . }}" target="_blank"> <i class="ion-social-googleplus-outline"></i> </a>
+                            {{ end }}
+                            {{ with .Site.Data.team.whatsapp2 }} <a href="{{ . }}" class="whatsapp" target="_blank"> <i class="ion-social-whatsapp-outline"></i> </a>
+                            {{ end }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

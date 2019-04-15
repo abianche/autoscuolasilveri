@@ -1,0 +1,66 @@
+enable: true
+title: I NOSTRI SERVIZI
+subtitle: Autoscuola Silveri offre alla propria clientela con grande professionalità e competenza, un'ampia gamma di servizi pratiche automobilistiche.
+serviceItem:
+    - icon: ion-document
+      title: Patenti
+      description: >
+          Corsi di teoria e pratica per le seguenti patenti
+      items:
+          - Patente Categoria AM, A1, A2, A
+          - Guida Accompagnata (GA)
+          - Patente Categoria B, B96, BE
+          - Patenti Superiori C1, C, C1E, CE
+          - Patenti Superiori D1, D, D1E, DE
+          - Patenti Speciali
+    - icon: ion-ios-calendar-outline
+      title: Rinnovo patente
+      description: >
+          La tua patente sta per scadere? Non perdere tempo, pensiamo a tutto noi! Seguiamo tutte le pratiche per il rinnovo di tutti i tipi di patenti disponibili. Prenota anche la visita medica presso la nostra Autoscuola.
+
+    - icon: ion-ios-checkmark-outline
+      title: Revisione patente
+      description: >
+          Vieni nella nostra Autoscuola per effettuare tutte le pratiche di revisione della patente. Ti seguiremo in tutte le fasi permettendoti di non perdere tempo in motorizzazione.
+
+    - icon: ion-ios-copy-outline
+      title: Duplicati patente
+      description: >
+          Avete smarrito la patente di guida? Oppure si è deteriorata ed è illeggibile? In questo caso avrete bisogno di un duplicato della vostra patente di guida. Vieni da noi, ci occupiamo di ogni tipo di duplicato!
+
+    - icon: ion-ios-refresh-outline
+      title: Conversione patenti
+      description: >
+          Hai bisogno di convertire la Patente? Cosa aspetti, ci occupiamo di tutte le pratiche necessarie per convertire la tua patente. Convertiamo tutte le patenti militari anche per uso civile. Quelle estere per uso anche in Italia.
+
+    - icon: ion-ios-paper-outline
+      title: Certificazioni professionali
+      description: >
+          Il CQC è un certificato che abilita chi lo possiede a condurre i veicoli nell'ambito di una attività lavorativa di autotrasporto. In Autoscuola Silveri pensiamo a tutte le pratiche necessarie senza farvi perdere tempo.
+
+    - icon: ion-ios-medkit-outline
+      title: Visite mediche in sede
+      description: >
+          Puoi fare le visite mediche direttamente nella nostra sede Il medico della nostra autoscuola può rilasciare certificati di idoneità alla guida per tutte le categorie di patenti e per i rinnovi/rilasci porto d'armi uso sportivo e licenza caccia.
+
+    - icon: ion-card
+      title: Assicurazioni
+      description: >
+          Sub-agenzia UnipolSai. Potete rivolgervi a noi per preventivi/rinnovi assicurazioni RCA, RCT, infortuni, casa, animali, condominio, tempo libero.
+
+    - icon: ion-briefcase
+      title: Studio consulenza automobilistica
+      description: >
+          Ci occupiamo di
+      items: 
+            - Trasferimento di proprietà
+            - Revisioni/collaudi/omologazioni
+            - Targa per ciclomotore a rilascio immediato
+            - Radiazione targa ciclomotore
+            - Duplicato carta circolazione
+            - Reimmatricolazione per perdita targhe
+            - Perdita di possesso per furto
+            - Estratto cronologico
+            - Chiusa inchiesta per furto
+            - Procura notarile
+            - Duplicato certificato di proprietà

@@ -1,0 +1,36 @@
+{{ if .Site.Params.maintenance.enable }}
+
+{{ partial "maintenance.html" . }}
+
+{{ else }}
+
+{{ partial "header.html" . }}
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>{{ .Title }}</h2>
+                    <div class="privacy-meta"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="static-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="static-page-content">{{ .Content }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ partial "footer.html" . }}
+
+{{ end }}
