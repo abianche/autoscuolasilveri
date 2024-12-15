@@ -80,7 +80,17 @@ export default function Team() {
           </Grid>
         ))}
         <Grid size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
-          <Image src="/about/gp.jpg" alt="Team" width={576} height={432} />
+          <Image
+            src="/about/gp.jpg"
+            alt="Team"
+            width={576}
+            height={432}
+            style={{
+              width: "100%",
+              maxWidth: "576px", // Maximum size on larger screens
+              height: "auto",
+            }}
+          />
         </Grid>
       </Grid>
     </Box>

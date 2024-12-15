@@ -33,8 +33,18 @@ export default function AboutSection() {
             }
           </Typography>
         </Grid>
-        <Grid size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
-          <Image src="/logo.png" alt="Logo" width={574} height={140.5} />
+        <Grid size={{ md: 12, lg: 6 }} sx={{ textAlign: "center" }}>
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={574}
+            height={140.5}
+            style={{
+              width: "100%",
+              maxWidth: "574px", // Maximum size on larger screens
+              height: "auto",
+            }}
+          />
         </Grid>
       </Grid>
     </Box>
