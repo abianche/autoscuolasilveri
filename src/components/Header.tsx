@@ -1,10 +1,7 @@
 // components/Header.tsx
-"use client";
-
 import { AppBar, Box, Link, Toolbar } from "@mui/material";
 import Image from "next/image";
 import NextLink from "next/link";
-import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -14,12 +11,6 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const toggleDrawer = (open: boolean) => () => {
-    setDrawerOpen(open);
-  };
-
   return (
     <AppBar
       position="sticky"
