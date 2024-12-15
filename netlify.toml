@@ -1,0 +1,14 @@
+[build]
+  # Directory containing the build output
+  command = "npm run build"
+  publish = ".next"
+
+[[redirects]]
+  # Redirects all routes to Next.js for proper handling (App Router)
+  from = "/*"
+  to = "/.netlify/functions/next"
+  status = 200
+
+[[functions]]
+  # Specifies the directory for Netlify functions (required for SSR and API routes)
+  directory = ".netlify/functions"
