@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid2";
 
 export default function AboutSectionTeam() {
   return (
-    <Box sx={{ py: 6, px: 16 }}>
+    <Box sx={{ py: 6, px: { xs: 2, md: 16 } }}>
       <Grid container spacing={4} alignItems="center">
         <Grid size={{ md: 12, lg: 6 }} sx={{ textAlign: "center" }}>
           <Image

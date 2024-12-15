@@ -12,7 +12,9 @@ export default function Footer() {
         <Typography variant="body1">
           {`Copyright © ${year} AUTOSCUOLA SILVERI. Tutti i diritti riservati.`}
         </Typography>
-        <Typography variant="body2">{"P.Iva: 01164690446"}</Typography>
+        <Typography variant="body2" sx={{ textDecoration: "none" }}>
+          {"P.Iva: 01164690446"}
+        </Typography>
       </Stack>
       <Stack direction={"row"} spacing={2}>
         <Link
