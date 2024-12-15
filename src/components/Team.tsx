@@ -17,14 +17,14 @@ const teamMembers = [
     name: "Alessandro Silveri",
     role: "Insegnante / Istruttore",
     socialLinks: {
-      whatsapp: "https://wa.me/00393290280928",
+      whatsapp: "https://wa.me/393290280928",
     },
   },
   {
     name: "Giuliana Satulli",
     role: "Insegnante / Istruttore",
     socialLinks: {
-      whatsapp: "https://wa.me/00393284820053",
+      whatsapp: "https://wa.me/393284820053",
       facebook: "https://www.facebook.com/giuliana.satulli.7",
     },
   },
@@ -67,7 +67,7 @@ export default function Team() {
                     <IconButton
                       component="a"
                       href={member.socialLinks.facebook}
-                      target="_blank"
+                      target="_top"
                       rel="noopener"
                       sx={{ color: colors.lightBlue[700] }}
                     >
