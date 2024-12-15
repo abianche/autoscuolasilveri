@@ -1,0 +1,48 @@
+{
+  "name": "autoscuolasilveri",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abianche/autoscuolasilveri.git"
+  },
+  "author": {
+    "name": "Alessio Bianchetti",
+    "email": "abianche@protonmail.com",
+    "url": "https://abianche.github.io"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/abianche/autoscuolasilveri/issues"
+  },
+  "homepage": "https://github.com/abianche/autoscuolasilveri#readme",
+  "dependencies": {
+    "@emotion/cache": "^11.13.5",
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^6.1.10",
+    "@mui/material": "^6.1.10",
+    "@mui/material-nextjs": "^6.1.9",
+    "@mui/x-date-pickers": "^7.23.0",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.13",
+    "@types/react-dom": "^18.3.1",
+    "dotenv": "^16.4.7",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
