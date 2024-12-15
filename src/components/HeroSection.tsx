@@ -43,7 +43,7 @@ export default function HeroSection() {
         </Typography>
         <RotatingText
           strings={["Patenti", "Assicurazioni", "Pratiche auto"]}
-          interval={4000} // Rotate every 4 seconds
+          interval={3000}
         />
         <Typography variant="h6" color={colors.grey[800]}>
           {"Da più di 50 anni un unica missione: insegnare a guidare con divertimento ed in sicurezza".toUpperCase()}

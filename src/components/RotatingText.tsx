@@ -10,21 +10,28 @@ interface RotatingTextProps {
 
 export default function RotatingText({
   strings,
-  interval = 3000,
-}: RotatingTextProps) {
+  interval = 5000,
+}: Readonly<RotatingTextProps>) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
 
+  // Function to handle animation reset
+  const resetAnimation = () => {
+    setAnimate(false);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % strings.length);
+  };
+
+  // Function to trigger animation
+  const triggerAnimation = () => {
+    setAnimate(true);
+    setTimeout(resetAnimation, 500);
+  };
+
   useEffect(() => {
-    const timer = setInterval(() => {
-      setAnimate(true);
-      setTimeout(() => {
-        setAnimate(false);
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % strings.length);
-      }, 500); // Match this duration with the CSS animation duration
-    }, interval);
+    const timer = setInterval(triggerAnimation, interval);
 
     return () => clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [strings, interval]);
 
   return (

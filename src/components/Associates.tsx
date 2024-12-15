@@ -26,12 +26,12 @@ export default function Associates() {
           size={{ xs: 6, sm: 3, md: 2 }}
           justifyContent="space-evenly"
         >
-          {sponsors.map((sponsor, index) => (
+          {sponsors.map((sponsor) => (
             <Grid
               display="flex"
               justifyContent="center"
               size="auto"
-              key={index}
+              key={sponsor.name}
             >
               <Image
                 src={sponsor.logo}
