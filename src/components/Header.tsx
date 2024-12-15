@@ -2,6 +2,10 @@
 "use client";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
+import PeopleIcon from "@mui/icons-material/People";
+import WorkIcon from "@mui/icons-material/Work";
+import ContactsIcon from "@mui/icons-material/Contacts";
 import {
   AppBar,
   Box,
@@ -11,6 +15,7 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemIcon,
   Toolbar,
 } from "@mui/material";
 import Image from "next/image";
@@ -18,10 +23,10 @@ import NextLink from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Chi siamo", href: "/chi-siamo" },
-  { label: "Servizi", href: "/servizi" },
-  { label: "Contatti", href: "/contatti" },
+  { label: "Home", href: "/", icon: <HomeIcon /> },
+  { label: "Chi siamo", href: "/chi-siamo", icon: <PeopleIcon /> },
+  { label: "Servizi", href: "/servizi", icon: <WorkIcon /> },
+  { label: "Contatti", href: "/contatti", icon: <ContactsIcon /> },
 ];
 
 export default function Header() {
@@ -78,7 +83,7 @@ export default function Header() {
             open={drawerOpen}
             onClose={toggleDrawer(false)}
           >
-            <List sx={{ width: 250 }}>
+            <List component="nav" sx={{ width: 250 }}>
               {navLinks.map((link) => (
                 <ListItem
                   key={link.label}
@@ -86,7 +91,10 @@ export default function Header() {
                   href={link.href}
                   onClick={toggleDrawer(false)}
                 >
-                  <ListItemText primary={link.label.toUpperCase()} />
+                  <>
+                    <ListItemIcon>{link.icon}</ListItemIcon>
+                    <ListItemText primary={link.label.toUpperCase()} />
+                  </>
                 </ListItem>
               ))}
             </List>
