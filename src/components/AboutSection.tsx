@@ -43,6 +43,7 @@ export default function AboutSection() {
               width: "100%",
               maxWidth: "574px", // Maximum size on larger screens
               height: "auto",
+              borderRadius: "8px",
             }}
           />
         </Grid>

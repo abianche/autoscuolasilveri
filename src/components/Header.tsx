@@ -28,6 +28,9 @@ export default function Header() {
               height={61.19}
               alt="Logo"
               quality={100}
+              style={{
+                borderRadius: "8px",
+              }}
             />
           </Link>
         </Box>

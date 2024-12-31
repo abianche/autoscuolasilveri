@@ -89,6 +89,7 @@ export default function Team() {
               width: "100%",
               maxWidth: "576px", // Maximum size on larger screens
               height: "auto",
+              borderRadius: "8px",
             }}
           />
         </Grid>
