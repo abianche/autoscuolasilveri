@@ -9,7 +9,7 @@ import SecurityIcon from "@mui/icons-material/Security";
 import TransformIcon from "@mui/icons-material/Transform";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import { Box, Card, CardContent, colors, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 
 const services = [
   {
