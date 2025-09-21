@@ -1,21 +1,7 @@
 // components/Header.tsx
-"use client";
-
-import MenuIcon from "@mui/icons-material/Menu";
-import {
-  AppBar,
-  Box,
-  Drawer,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemText,
-  Toolbar,
-} from "@mui/material";
+import { AppBar, Box, Link, Toolbar } from "@mui/material";
 import Image from "next/image";
 import NextLink from "next/link";
-import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -25,14 +11,13 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const toggleDrawer = (open: boolean) => () => {
-    setDrawerOpen(open);
-  };
-
   return (
-    <AppBar position="sticky" color="primary" elevation={0} sx={{ px: 6 }}>
+    <AppBar
+      position="sticky"
+      color="primary"
+      elevation={0}
+      sx={{ px: { xs: 2, md: 6 }, alignItems: { xs: "center", md: "normal" } }}
+    >
       <Toolbar variant="dense">
         {/* Logo */}
         <Box sx={{ flexGrow: 1, pt: 2 }}>
@@ -43,6 +28,9 @@ export default function Header() {
               height={61.19}
               alt="Logo"
               quality={100}
+              style={{
+                borderRadius: "8px",
+              }}
             />
           </Link>
         </Box>
@@ -64,35 +52,29 @@ export default function Header() {
         </Box>
 
         {/* Burger Menu for small screens */}
-        <Box sx={{ display: { xs: "block", md: "none" } }}>
-          <IconButton
-            color="inherit"
-            edge="end"
-            onClick={toggleDrawer(true)}
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Drawer
-            anchor="right"
-            open={drawerOpen}
-            onClose={toggleDrawer(false)}
-          >
-            <List sx={{ width: 250 }}>
-              {navLinks.map((link) => (
-                <ListItem
-                  key={link.label}
-                  component={NextLink}
-                  href={link.href}
-                  onClick={toggleDrawer(false)}
-                >
-                  <ListItemText primary={link.label.toUpperCase()} />
-                </ListItem>
-              ))}
-            </List>
-          </Drawer>
-        </Box>
       </Toolbar>
+      <Box
+        sx={{
+          display: {
+            xs: "flex",
+            md: "none",
+            justifyContent: "center",
+          },
+        }}
+      >
+        {navLinks.map((link) => (
+          <Link
+            component={NextLink}
+            key={link.label}
+            href={link.href}
+            color="inherit"
+            underline="none"
+            sx={{ mx: 1, my: 2 }}
+          >
+            {link.label.toUpperCase()}
+          </Link>
+        ))}
+      </Box>
     </AppBar>
   );
 }

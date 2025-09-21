@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid2";
 
 const locations = [
   {
-    name: "Sede Principale",
+    name: "Sede principale",
     address: "Viale Trento 95 - 63087 Comunanza (AP)",
     phone: "+39 0736 845317",
     mapLink: "https://maps.app.goo.gl/3LgGhFJWAXXQip5R8",

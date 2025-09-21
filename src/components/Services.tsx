@@ -91,8 +91,8 @@ export default function Services() {
         {"I NOSTRI SERVIZI"}
       </Typography>
       <Grid container spacing={4}>
-        {services.map((service, index) => (
-          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
+        {services.map((service) => (
+          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={service.title}>
             <Card sx={{ height: "100%" }}>
               <CardContent
                 sx={{

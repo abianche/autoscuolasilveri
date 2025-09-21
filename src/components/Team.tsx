@@ -17,14 +17,14 @@ const teamMembers = [
     name: "Alessandro Silveri",
     role: "Insegnante / Istruttore",
     socialLinks: {
-      whatsapp: "https://wa.me/00393290280928",
+      whatsapp: "https://wa.me/393290280928",
     },
   },
   {
     name: "Giuliana Satulli",
     role: "Insegnante / Istruttore",
     socialLinks: {
-      whatsapp: "https://wa.me/00393284820053",
+      whatsapp: "https://wa.me/393284820053",
       facebook: "https://www.facebook.com/giuliana.satulli.7",
     },
   },
@@ -67,7 +67,7 @@ export default function Team() {
                     <IconButton
                       component="a"
                       href={member.socialLinks.facebook}
-                      target="_blank"
+                      target="_top"
                       rel="noopener"
                       sx={{ color: colors.lightBlue[700] }}
                     >
@@ -80,7 +80,18 @@ export default function Team() {
           </Grid>
         ))}
         <Grid size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
-          <Image src="/about/gp.jpg" alt="Team" width={576} height={432} />
+          <Image
+            src="/about/gp.jpg"
+            alt="Team"
+            width={576}
+            height={432}
+            style={{
+              width: "100%",
+              maxWidth: "576px", // Maximum size on larger screens
+              height: "auto",
+              borderRadius: "8px",
+            }}
+          />
         </Grid>
       </Grid>
     </Box>
