@@ -1,3 +1,5 @@
+"use client";
+
 // components/CallToAction.tsx
 import { Box, Button, Container, Typography } from "@mui/material";
 import NextLink from "next/link";

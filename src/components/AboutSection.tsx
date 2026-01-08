@@ -1,3 +1,5 @@
+"use client";
+
 // components/AboutSection.tsx
 import React from "react";
 import { Box, Typography } from "@mui/material";
@@ -38,7 +40,7 @@ export default function AboutSection() {
             src="/logo.png"
             alt="Logo"
             width={574}
-            height={140.5}
+            height={140}
             style={{
               width: "100%",
               maxWidth: "574px", // Maximum size on larger screens

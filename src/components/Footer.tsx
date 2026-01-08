@@ -1,6 +1,6 @@
-// components/Footer.tsx
 "use client";
 
+// components/Footer.tsx
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Box, colors, Container, Link, Stack, Typography } from "@mui/material";
 

@@ -1,4 +1,10 @@
-import CookieBanner from "@/components/CookieBanner";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const CookieBanner = dynamic(() => import("@/components/CookieBanner"), {
+  ssr: false,
+});
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { colors, Container } from "@mui/material";

@@ -1,3 +1,5 @@
+"use client";
+
 // components/Contatti.tsx
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
