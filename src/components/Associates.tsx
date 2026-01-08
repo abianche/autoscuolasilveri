@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, colors, Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";

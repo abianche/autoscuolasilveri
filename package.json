@@ -1,12 +1,12 @@
 {
   "name": "autoscuolasilveri",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,6 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.3",
     "@types/node": "25.0.3",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",

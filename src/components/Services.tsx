@@ -1,3 +1,5 @@
+"use client";
+
 // components/Services.tsx
 import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";

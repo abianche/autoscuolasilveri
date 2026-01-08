@@ -1,3 +1,5 @@
+"use client";
+
 // components/Team.tsx
 import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";

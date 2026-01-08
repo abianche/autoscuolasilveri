@@ -1,3 +1,5 @@
+"use client";
+
 // components/HeroSection.tsx
 import { Box, colors, Container, Typography } from "@mui/material";
 import RotatingText from "./RotatingText";
