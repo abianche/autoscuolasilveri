@@ -1,18 +1,14 @@
-// components/CookieBanner.tsx
 "use client";
 
-import React, { useState, useEffect } from "react";
+// components/CookieBanner.tsx
+import React, { useState } from "react";
 import { Box, Typography, Button } from "@mui/material";
 
 const CookieBanner = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(() => {
+    return localStorage.getItem("cookieConsent") !== "true";
+  });
 
-  useEffect(() => {
-    const consent = localStorage.getItem("cookieConsent");
-    if (!consent) {
-      setIsVisible(true);
-    }
-  }, []);
 
   const handleAccept = () => {
     localStorage.setItem("cookieConsent", "true");

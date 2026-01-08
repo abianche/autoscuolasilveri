@@ -1,3 +1,5 @@
+"use client";
+
 // components/Header.tsx
 import { AppBar, Box, Link, Toolbar } from "@mui/material";
 import Image from "next/image";
@@ -25,7 +27,7 @@ export default function Header() {
             <Image
               src="/logo.png"
               width={250}
-              height={61.19}
+              height={61}
               alt="Logo"
               quality={100}
               style={{
